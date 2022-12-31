@@ -14,3 +14,9 @@ CREATE TABLE employee (
 );
 
 DESCRIBE employee;
+
+INSERT INTO employee (name, salary) VALUES ('Pedro', 4500), ('Miau', 4500);
+
+SELECT * FROM employee;
+
+DELETE FROM employee;
