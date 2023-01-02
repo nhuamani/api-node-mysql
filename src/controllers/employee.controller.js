@@ -1,7 +1,10 @@
 import { pool } from '../dbconexion.js'
 
 
-export const getEmployees = (req, res) => res.send('obteniendo empleados')
+export const getEmployees = async (req, res) => {
+    const [data] = await pool.query('SELECT * FROM employee')
+    res.send(data)
+}
 
 export const createEmployee = async (req, res) => {
     const {name, salary} = req.body
