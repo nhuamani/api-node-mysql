@@ -15,8 +15,16 @@ CREATE TABLE employee (
 
 DESCRIBE employee;
 
-INSERT INTO employee (name, salary) VALUES ('Pedro', 4500), ('Miau', 4500);
+INSERT INTO employee VALUES
+    (1, 'Joe', 1000),
+    (2, 'Henry', 2000),
+    (3, 'Sam', 2500),
+    (4, 'Max', 1500);
+
+INSERT INTO employee (name, salary) VALUES ('Pedro', 3500), ('Miau', 3000);
 
 SELECT * FROM employee;
 
 DELETE FROM employee;
+
+DROP TABLE employee;
