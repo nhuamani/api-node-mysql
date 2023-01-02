@@ -8,6 +8,6 @@ const app = express()
 app.use(express.json())
 
 app.use(indexRoutes)
-app.use(employeeRoutes)
+app.use('/api', employeeRoutes)
 
 app.listen(3000)
