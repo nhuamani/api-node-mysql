@@ -23,6 +23,8 @@ INSERT INTO employee VALUES
 
 INSERT INTO employee (name, salary) VALUES ('Pedro', 3500), ('Miau', 3000);
 
+UPDATE employee SET name='Dom' WHERE id = 4;
+
 SELECT * FROM employee;
 
 DELETE FROM employee;
