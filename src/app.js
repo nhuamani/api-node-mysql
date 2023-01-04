@@ -5,7 +5,7 @@ import indexRoutes from './routes/index.routes.js'
 
 const app = express()
 
-app.use(express.json())
+app.use(express.json()) // middleware que transforma la req.body a un json 
 
 app.use(indexRoutes)
 app.use('/api', employeeRoutes)
